@@ -65,13 +65,13 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
-    - _BranchForceHeaviness: 0.7
+    - _BranchForceHeaviness: 1
     - _BranchHeaviness: 1
     - _BranchRipple: 1
     - _BranchRippleSpeed: 0.7
-    - _BranchTurbulences: 0.7
-    - _BranchTwitch: 1.5
-    - _BranchWhip: 2
+    - _BranchTurbulences: 1
+    - _BranchTwitch: 1
+    - _BranchWhip: 3
     - _Brightness: 1
     - _BumpScale: 1
     - _Contrast: 1.1
@@ -102,14 +102,14 @@ Material:
     - _SpecularHighlights: 1
     - _SrcBlend: 1
     - _UVSec: 0
-    - _WindAmplitude: 3
+    - _WindAmplitude: 1.1
     - _WindConstantTilt: 1
-    - _WindDegreeSlope: 1.5
+    - _WindDegreeSlope: 3
     - _WindLeafOn: 1
     - _WindPower: 1
     - _WindPowerSpeed: 1
     - _WindQuality: 5
-    - _WindSpeed: 0.3
+    - _WindSpeed: 1
     - _WindVibration: 0.5
     - _WindVibrationSpeed: 0.5
     - _ZWrite: 1

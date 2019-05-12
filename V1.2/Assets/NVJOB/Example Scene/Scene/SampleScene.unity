@@ -1156,13 +1156,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
-  m_LocalRotation: {x: 0, y: 0.30070576, z: 0, w: 0.953717}
-  m_LocalPosition: {x: 1, y: 12, z: -10}
+  m_LocalRotation: {x: 0.12186928, y: 0, z: 0, w: 0.9925462}
+  m_LocalPosition: {x: 0, y: 16.1, z: -18.8}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1038822610}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 35, z: 0}
+  m_LocalEulerAnglesHint: {x: 14, y: 0, z: 0}
 --- !u!1 &1038822608
 GameObject:
   m_ObjectHideFlags: 0
@@ -1192,7 +1192,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e638851bd5f1cd47816d92fe39440be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rot: 5
+  rot: 4
 --- !u!4 &1038822610
 Transform:
   m_ObjectHideFlags: 0
@@ -1200,14 +1200,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1038822608}
-  m_LocalRotation: {x: 0, y: 0.9996101, z: 0, w: 0.027921675}
+  m_LocalRotation: {x: 0, y: 0.17364825, z: -0, w: -0.9848078}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 963194228}
   m_Father: {fileID: 0}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 176.8, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -380, z: 0}
 --- !u!1 &1093756022
 GameObject:
   m_ObjectHideFlags: 0
@@ -1849,7 +1849,7 @@ WindZone:
   m_Enabled: 1
   m_Mode: 0
   m_Radius: 20
-  m_WindMain: 0.8
+  m_WindMain: 0.2
   m_WindTurbulence: 0.2
   m_WindPulseMagnitude: 0.8
   m_WindPulseFrequency: 0.25
@@ -1902,9 +1902,9 @@ MonoBehaviour:
   waterSoftFactor: 0.055
   waterSinWaves: 0.2
   waterSinWavesSpeed: 0.1
-  UvRotateSpeed: -0.25
+  UvRotateSpeed: -0.2
   UvRotateDistance: 1
-  UvBumpRotateSpeed: 0.5
+  UvBumpRotateSpeed: 0.4
   UvBumpRotateDistance: 2
 --- !u!4 &1928879114
 Transform:

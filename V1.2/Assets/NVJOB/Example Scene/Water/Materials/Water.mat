@@ -21,7 +21,7 @@ Material:
     m_TexEnvs:
     - _BumpMap:
         m_Texture: {fileID: 2800000, guid: 09e350b54acf68c4ca8b3f46a5a64977, type: 3}
-        m_Scale: {x: 65, y: 65}
+        m_Scale: {x: 50, y: 50}
         m_Offset: {x: 0, y: 0}
     - _BumpMap2:
         m_Texture: {fileID: 2800000, guid: 9926e8b8960d1c24da43e476d2968241, type: 3}
@@ -29,7 +29,7 @@ Material:
         m_Offset: {x: 0, y: 0}
     - _BumpMapDetail:
         m_Texture: {fileID: 2800000, guid: 9ae31f4618f8f634ab662f7d73633d23, type: 3}
-        m_Scale: {x: 65, y: 65}
+        m_Scale: {x: 50, y: 50}
         m_Offset: {x: 0, y: 0}
     - _Cube:
         m_Texture: {fileID: 8900000, guid: c71b18c212675d74f98e82786d36bd6d, type: 2}
@@ -45,7 +45,7 @@ Material:
         m_Offset: {x: 0, y: 0}
     - _Detail:
         m_Texture: {fileID: 2800000, guid: 8c79750780c88174ab322e9084520cda, type: 3}
-        m_Scale: {x: 32, y: 32}
+        m_Scale: {x: 30, y: 30}
         m_Offset: {x: 0, y: 0}
     - _DetailAlbedoMap:
         m_Texture: {fileID: 0}
@@ -73,7 +73,7 @@ Material:
         m_Offset: {x: 0, y: 0}
     - _MainTex:
         m_Texture: {fileID: 2800000, guid: 29b073a0522333d45bd8685816b2dbd6, type: 3}
-        m_Scale: {x: 32, y: 32}
+        m_Scale: {x: 30, y: 30}
         m_Offset: {x: 0, y: 0}
     - _MetallicGlossMap:
         m_Texture: {fileID: 0}
@@ -97,7 +97,7 @@ Material:
         m_Offset: {x: 0, y: 0}
     - _ParallaxMap:
         m_Texture: {fileID: 2800000, guid: 84f18770439fb0d48af8066ac8c0bdf6, type: 3}
-        m_Scale: {x: 65, y: 65}
+        m_Scale: {x: 45, y: 45}
         m_Offset: {x: 0, y: 0}
     - _RefractionNormals:
         m_Texture: {fileID: 2800000, guid: dd148cda80391e24ab09fc059044a69a, type: 3}
@@ -131,8 +131,8 @@ Material:
     - _Glossiness: 0.5
     - _GlossyReflections: 1
     - _Intensity: 2
-    - _IntensityNm: 1
-    - _IntensityRef: 0.9
+    - _IntensityNm: 0.7
+    - _IntensityRef: 0.8
     - _InvFade: 0
     - _Metallic: 0
     - _MinuteDetailIntensity: 1.455
@@ -140,7 +140,8 @@ Material:
     - _Mitigation: 22.4
     - _Mode: 0
     - _OcclusionStrength: 1
-    - _Parallax: 0.1
+    - _Parallax: 0.17
+    - _ParallaxScale: 0.15
     - _Radius: 1
     - _Reflect: 1
     - _RefractionIntensity: 0.61
@@ -167,5 +168,5 @@ Material:
     - _EdgeColor: {r: 0.5588235, g: 0.5588235, b: 0.5588235, a: 1}
     - _EmissionColor: {r: 0.5441177, g: 0.5441177, b: 0.5441177, a: 1}
     - _ReflectColor: {r: 0.28235295, g: 0.29411766, b: 0.2509804, a: 1}
-    - _SpecColor: {r: 0.08627451, g: 0.08627451, b: 0.08627451, a: 1}
+    - _SpecColor: {r: 0.08627451, g: 0.07328104, b: 0.06901961, a: 1}
     - _SpecularColor: {r: 0.5808823, g: 0.5808823, b: 0.5808823, a: 1}

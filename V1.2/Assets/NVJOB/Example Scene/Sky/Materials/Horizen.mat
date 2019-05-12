@@ -63,7 +63,7 @@ Material:
     - _GlossMapScale: 1
     - _Glossiness: 0.5
     - _GlossyReflections: 1
-    - _Level0: 0
+    - _Level0: 5
     - _Level1: 632.86
     - _Metallic: 0
     - _Mode: 0
@@ -77,5 +77,5 @@ Material:
     m_Colors:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-    - _Level0Color: {r: 0.84705883, g: 0.972549, b: 0.98039216, a: 1}
-    - _Level1Color: {r: 0.6650944, g: 0.9042798, b: 1, a: 0.28235295}
+    - _Level0Color: {r: 0.8454902, g: 0.97231376, b: 0.98, a: 1}
+    - _Level1Color: {r: 0.6650944, g: 0.9042798, b: 1, a: 0.2509804}
