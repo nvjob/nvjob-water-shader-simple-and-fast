@@ -18,8 +18,7 @@ To work on the project, you will need a Unity version of at least 2019.1.0f2 (64
 
 The movement of the waves is carried out using global shader variables: _WaterLocalUvX, _WaterLocalUvZ, _WaterLocalUvNX, _WaterLocalUvNZ.
 
-_WaterLocalUvX, _WaterLocalUvZ - Offset main texture.
-
+_WaterLocalUvX, _WaterLocalUvZ - Offset main texture.<br/>
 _WaterLocalUvNX, _WaterLocalUvNZ - Offset normal map texture.
 
 
