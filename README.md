@@ -28,10 +28,10 @@ using UnityEngine;
 
 public class Water : MonoBehaviour
 {
-    public float UvRotateSpeed = 1;
+    public float UvRotateSpeed = 0.2;
     public float UvRotateDistance = 1;
-    public float UvBumpRotateSpeed = 1;
-    public float UvBumpRotateDistance = 1;
+    public float UvBumpRotateSpeed = 0.4;
+    public float UvBumpRotateDistance = 2;
 
     float timeTime;
     Vector2 Vector2one, lwVector, lwNVector;
