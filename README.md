@@ -21,6 +21,45 @@ The movement of the waves is carried out using global shader variables: _WaterLo
 _WaterLocalUvX, _WaterLocalUvZ - Offset main texture.<br/>
 _WaterLocalUvNX, _WaterLocalUvNZ - Offset normal map texture.
 
+#### An example of a script for the movement of water.
+
+```
+using UnityEngine;
+
+public class Water : MonoBehaviour
+{
+    public float UvRotateSpeed = 1;
+    public float UvRotateDistance = 1;
+    public float UvBumpRotateSpeed = 1;
+    public float UvBumpRotateDistance = 1;
+
+    float timeTime;
+    Vector2 Vector2one, lwVector, lwNVector;
+    Vector3 Vector3forward;    
+
+    private void Awake()
+    {
+        lwVector = Vector2.zero;
+        lwNVector = Vector2.zero;
+    }
+
+    void Update()
+    {
+        if (timeTime != Time.time) timeTime = Time.time;
+        if (Vector3forward != Vector3.forward) Vector3forward = Vector3.forward;
+        if (Vector2one != Vector2.one) Vector2one = Vector2.one;
+
+        lwVector = Quaternion.AngleAxis(timeTime * UvRotateSpeed, Vector3forward) * Vector2one * UvRotateDistance;
+        lwNVector = Quaternion.AngleAxis(timeTime * UvBumpRotateSpeed, Vector3forward) * Vector2one * UvBumpRotateDistance;
+
+        Shader.SetGlobalFloat("_WaterLocalUvX", lwVector.x);
+        Shader.SetGlobalFloat("_WaterLocalUvZ", lwVector.y);
+        Shader.SetGlobalFloat("_WaterLocalUvNX", lwNVector.x);
+        Shader.SetGlobalFloat("_WaterLocalUvNZ", lwNVector.y);
+    }
+}
+```
+<br/>
 
 ![GitHub Logo](https://lh3.googleusercontent.com/zpGEbAfdPEVf2EJH4om8x7kGZik0Wl8xOl3SKyhm7bBmcT2S0SdUtiPlV-mBkHs7JXNI2Lu2JqUGx7-_G_eU4Qza4z2uWLYtH7PBH8JXzb4TLWZMqsSmRexXFqaeQJoJYL8Bp8StncFEDV8f6kjHz4zDtILshcVgWpwhWN8Z6I-nUq1Csu6FSmB-lnFCFLhDwglf_NZmQf9RQYSFjNWDBbiAqOT6c3rNAySAmHiGf5xija_0Rf0sVZu81wv64ZOP3Bmsh_e78l3i-lwhwj43G0F9fE6ZYETv_QkmpIHfMTBwKl7dNgXXOG8MOpJ-ua18VxDHp4-zp1qI0CLk5xsRvINxam3ROGUEARFvBh9Qm3nDOeNRE-U_ogePPEcpiZ0HXF-qS9-N4oDqUVp7wjCazbTdaYzDsBjSjyzXZdtl9A0BicG5JrI3HTpjuxkRLrjaQytmfUBcK1N9xTWSJcpS0WUoLo9R4ufOFMub6hsw-H1pfc3qL5vxP4FLDKFQ2eujsnSYKackT78w16uUpTdZhpPHFdZGDrXM8rizcrW0khThGC-OhN0yk0CjyvUShWRN9ikFZE1Mmv9UE8Oz7lBgf-gCZUL3OuUeCCEYSRkIgDaYxSwfTsGgtvGUrUCljRxMEIOBaPaNYjPCWKRgbWFOGt19I-5uItl1v3zfdLVu8ZIHYXhIf3ZNjUMPLMYnj_nB7ve7l1Q88Z9AgTvXAPNiLiEv=w383-h859-no)
 
