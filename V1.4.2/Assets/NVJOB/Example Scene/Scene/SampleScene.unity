@@ -1117,8 +1117,8 @@ Camera:
   m_GameObject: {fileID: 963194225}
   m_Enabled: 1
   serializedVersion: 2
-  m_ClearFlags: 4
-  m_BackGroundColor: {r: 0, g: 0, b: 0, a: 0}
+  m_ClearFlags: 2
+  m_BackGroundColor: {r: 0.3254902, g: 0.5294118, b: 0.75686276, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -1448,6 +1448,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bottle
       objectReference: {fileID: 0}
+    - target: {fileID: 4967246071858481440, guid: be38c03b544cf314f8c2142259753a56,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: -4806265891081105818, guid: be38c03b544cf314f8c2142259753a56,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -1507,11 +1512,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4967246071858481440, guid: be38c03b544cf314f8c2142259753a56,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5715182678079498783, guid: be38c03b544cf314f8c2142259753a56,
         type: 3}
@@ -2092,7 +2092,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   wind: {fileID: 1832492882}
   ssgUvRotateSpeed: 0.5
-  ssgUvRotateDistance: 1
+  ssgUvRotateDistance: 0.7
   UvRotateSpeed: 0.4
   UvRotateDistance: 2
   UvBumpRotateSpeed: 0.4
