@@ -73,3 +73,6 @@ Designed by #NVJOB Nicholas Veselov | https://nvjob.pro | http://nvjob.dx.am | h
 
 ### License
 This project is licensed under the MIT License - see the LICENSE file for details
+
+### Donate
+You can thank me by a voluntary donation. https://nvjob.pro/donations.html
