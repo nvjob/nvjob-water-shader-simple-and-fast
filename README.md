@@ -4,6 +4,8 @@ Version 1.4.2
 
 Simple and fast water shader. This shader is suitable for scenes where water is not a key element of the scene, but a decorative element. Supported rendering path deferred and forward.
 
+https://assetstore.unity.com/packages/vfx/shaders/nvjob-water-shader-simple-and-fast-149916
+
 https://www.youtube.com/watch?v=94dRrLFMA1k<br>
 https://www.youtube.com/watch?v=q91znPUJtPY
 
