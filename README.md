@@ -19,7 +19,7 @@ https://www.youtube.com/watch?v=q91znPUJtPY
 
 ### Prerequisites
 
-To work on the project, you will need a Unity version of at least 2019.1.0f2 (64-bit).
+To work on the project, you will need a Unity version of at least 2019.1.8 (64-bit).
 
 ### Information
 
