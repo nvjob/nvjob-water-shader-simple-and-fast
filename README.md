@@ -35,14 +35,12 @@ using UnityEngine;
 
 public class Water : MonoBehaviour
 {
-    public float UvRotateSpeed = 0.2;
-    public float UvRotateDistance = 1;
-    public float UvBumpRotateSpeed = 0.4;
-    public float UvBumpRotateDistance = 2;
+    public float UvRotateSpeed = 0.4f;
+    public float UvRotateDistance = 2.0f;
+    public float UvBumpRotateSpeed = 0.4f;
+    public float UvBumpRotateDistance = 2.0f;
 
-    float timeTime;
-    Vector2 Vector2one, lwVector, lwNVector;
-    Vector3 Vector3forward;    
+    Vector2 lwVector, lwNVector;
 
     private void Awake()
     {
@@ -52,13 +50,8 @@ public class Water : MonoBehaviour
 
     void Update()
     {
-        if (timeTime != Time.time) timeTime = Time.time;
-        if (Vector3forward != Vector3.forward) Vector3forward = Vector3.forward;
-        if (Vector2one != Vector2.one) Vector2one = Vector2.one;
-
-        lwVector = Quaternion.AngleAxis(timeTime * UvRotateSpeed, Vector3forward) * Vector2one * UvRotateDistance;
-        lwNVector = Quaternion.AngleAxis(timeTime * UvBumpRotateSpeed, Vector3forward) * Vector2one * UvBumpRotateDistance;
-
+        lwVector = Quaternion.AngleAxis(Time.time * UvRotateSpeed, Vector3.forward) * Vector2.one * UvRotateDistance;
+        lwNVector = Quaternion.AngleAxis(Time.time * UvBumpRotateSpeed, Vector3.forward) * Vector2.one * UvBumpRotateDistance;
         Shader.SetGlobalFloat("_WaterLocalUvX", lwVector.x);
         Shader.SetGlobalFloat("_WaterLocalUvZ", lwVector.y);
         Shader.SetGlobalFloat("_WaterLocalUvNX", lwNVector.x);
