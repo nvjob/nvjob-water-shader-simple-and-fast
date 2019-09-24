@@ -1,0 +1,120 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Palm Bark
+  m_Shader: {fileID: 4800000, guid: d268ac7157a151b46b83fc8c0168f20d, type: 3}
+  m_ShaderKeywords: EFFECT_BUMP
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _BumpMap:
+        m_Texture: {fileID: 2800000, guid: 9882a0dbf0ac4164abd22dfe11dd5fb1, type: 3}
+        m_Scale: {x: 0.5, y: 0.7}
+        m_Offset: {x: 0, y: 0.5}
+    - _Cube:
+        m_Texture: {fileID: 8900000, guid: c71b18c212675d74f98e82786d36bd6d, type: 2}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailAlbedoMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailMask:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailNormalMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _EmissionMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: ccd33c6206fd3454998b1554c25fbf23, type: 3}
+        m_Scale: {x: 0.5, y: 0.5}
+        m_Offset: {x: 0, y: 0}
+    - _MetallicGlossMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _OcclusionMap:
+        m_Texture: {fileID: 2800000, guid: 3d7d4c90e4f6d9c41b6cb9987db26281, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _ParallaxMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - _BranchElasticity: 1
+    - _BranchElasticitySpeed: 1
+    - _BranchForceHeaviness: 1
+    - _BranchHeaviness: 1
+    - _BranchRipple: 1
+    - _BranchRippleSpeed: 0.7
+    - _BranchTurbulences: 1
+    - _BranchTwitch: 1
+    - _BranchWhip: 3
+    - _Brightness: 1
+    - _BumpScale: 1
+    - _Contrast: 2
+    - _Cull: 2
+    - _Cutoff: 0.5
+    - _DetailNormalMapScale: 1
+    - _DstBlend: 0
+    - _GlossMapScale: 1
+    - _Glossiness: 0.5
+    - _GlossyReflections: 1
+    - _IntensityNm: 5
+    - _IntensityOc: 1.2
+    - _IntensityRef: 0.15
+    - _LeafRipple: 1
+    - _LeafRippleSpeed: 1
+    - _LeafTumble: 1
+    - _LeafTumbleSpeed: 1
+    - _Light: 1
+    - _Metallic: 0
+    - _Mode: 0
+    - _OcclusionStrength: 1
+    - _OnHueVariation: 0
+    - _Parallax: 0.02
+    - _Saturation: 0.2
+    - _Shadow_Cutoff: 0.333
+    - _Shininess: 0.256
+    - _SmoothnessTextureChannel: 0
+    - _SpecularHighlights: 1
+    - _SrcBlend: 1
+    - _UVSec: 0
+    - _WindAmplitude: 2
+    - _WindBranchQuality: 3
+    - _WindConstantTilt: 1.2
+    - _WindDegreeSlope: 3
+    - _WindPower: 1
+    - _WindPowerSpeed: 1
+    - _WindQuality: 5
+    - _WindSpeed: 0.5
+    - _ZWrite: 1
+    m_Colors:
+    - _Color: {r: 1, g: 0.85598093, b: 0.5529412, a: 1}
+    - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
+    - _HueVariation: {r: 1, g: 0.5, b: 0, a: 0.1}
+    - _ReflectColor: {r: 1, g: 1, b: 1, a: 0.5}
+    - _SpecColor: {r: 0.794, g: 0.6723388, b: 0.56988716, a: 1}
