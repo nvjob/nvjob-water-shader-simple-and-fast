@@ -68,7 +68,7 @@ public class Water : MonoBehaviour
 Designed by #NVJOB Nicholas Veselov - https://nvjob.github.io
 
 ### License
-MIT License - https://github.com/nvjob/NVJOB-Water-Shader-simple-and-fast/blob/master/LICENSE
+MIT License - https://nvjob.github.io/mit-license
 
 ### Donate
 Help for this project - https://nvjob.github.io/donate
