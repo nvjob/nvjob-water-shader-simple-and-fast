@@ -57,6 +57,7 @@ public class Water : MonoBehaviour
 }
 ```
 
+
 #### For working shaders on mobile platforms with Forward Rendering.
 In asset this fix is already added to the general script.
 
