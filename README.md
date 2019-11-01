@@ -56,7 +56,22 @@ public class Water : MonoBehaviour
     }
 }
 ```
-<br/>
+
+#### For working shaders on mobile platforms with Forward Rendering.
+
+```
+using UnityEngine;
+
+[ExecuteInEditMode]
+public class depthTextureFix : MonoBehaviour
+{
+    void OnEnable()
+    {
+        GetComponent<Camera>().depthTextureMode = DepthTextureMode.Depth;
+    }
+}
+```
+
 
 ![GitHub Logo](https://raw.githubusercontent.com/nvjob/nvjob.github.io/master/repo/unity%20assets/water%20shader%20saf%20sr/144/pic/2.jpg)
 ![GitHub Logo](https://raw.githubusercontent.com/nvjob/nvjob.github.io/master/repo/unity%20assets/water%20shader%20saf%20sr/144/pic/3.jpg)
