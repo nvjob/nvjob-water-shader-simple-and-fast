@@ -72,3 +72,6 @@ MIT License - https://nvjob.github.io/mit-license
 
 ### Donate
 Help for this project - https://nvjob.github.io/donate
+
+### Report a Problem
+Report a Problem / Issue Tracker / FAQ - https://nvjob.github.io/reportaproblem
