@@ -57,7 +57,6 @@ public class Water : MonoBehaviour
 }
 ```
 
-
 #### For working shaders on mobile platforms with Forward Rendering.
 In asset this fix is already added to the general script.
 
@@ -74,6 +73,25 @@ public class depthTextureFix : MonoBehaviour
 }
 ```
 
+#### The rotation of the wind synchronously with water.
+```
+using UnityEngine;
+
+public class WindZoneRot : MonoBehaviour
+{
+    Transform tr;
+
+    private void Awake()
+    {
+        tr = transform;
+    }
+
+    void LateUpdate()
+    {
+        tr.rotation = Quaternion.LookRotation(new Vector3(Shader.GetGlobalFloat("_WaterLocalUvNX"), 0, Shader.GetGlobalFloat("_WaterLocalUvNZ")), Vector3.zero) * Quaternion.Euler(0, -40, 0);
+    }
+}
+```
 
 ![GitHub Logo](https://raw.githubusercontent.com/nvjob/nvjob.github.io/master/repo/unity%20assets/water%20shader%20saf%20sr/144/pic/2.jpg)
 ![GitHub Logo](https://raw.githubusercontent.com/nvjob/nvjob.github.io/master/repo/unity%20assets/water%20shader%20saf%20sr/144/pic/3.jpg)
