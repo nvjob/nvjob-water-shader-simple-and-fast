@@ -73,7 +73,7 @@ public class depthTextureFix : MonoBehaviour
 }
 ```
 
-#### The rotation of the wind synchronously with water.
+#### The rotation of the wind synchronously with water (optionally).
 ```
 using UnityEngine;
 
