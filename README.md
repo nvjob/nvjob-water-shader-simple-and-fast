@@ -2,20 +2,21 @@
 
 Version 1.4.5
 
+![GitHub Logo](https://raw.githubusercontent.com/nvjob/nvjob.github.io/master/repo/unity%20assets/water%20shader%20saf%20sr/144/pic/1.gif)
+
 Simple and fast water shader. This shader is suitable for scenes where water is not a key element of the scene, but a decorative element. Supported rendering path deferred and forward. It works on all platforms.
 
 Unity Asset Store - https://assetstore.unity.com/packages/vfx/shaders/nvjob-water-shader-simple-and-fast-149916 <br/>
 Previous Versions - https://github.com/nvjob/NVJOB-Water-Shader-old-versions
 
-![GitHub Logo](https://raw.githubusercontent.com/nvjob/nvjob.github.io/master/repo/unity%20assets/water%20shader%20saf%20sr/144/pic/1.gif)
+![GitHub Logo](https://raw.githubusercontent.com/nvjob/nvjob.github.io/master/repo/unity%20assets/water%20shader%20saf%20sr/144/pic/1.jpg)
+
 
 ### Prerequisites
 
 To work on the project, you will need a Unity version of at least 2019.1.8 (64-bit).
 
 ### Information
-
-![GitHub Logo](https://raw.githubusercontent.com/nvjob/nvjob.github.io/master/repo/unity%20assets/water%20shader%20saf%20sr/144/pic/5.jpg)
 
 The movement of the waves is carried out using global shader variables: _WaterLocalUvX, _WaterLocalUvZ, _WaterLocalUvNX, _WaterLocalUvNZ.
 
@@ -54,6 +55,8 @@ public class Water : MonoBehaviour
 }
 ```
 
+![GitHub Logo](https://raw.githubusercontent.com/nvjob/nvjob.github.io/master/repo/unity%20assets/water%20shader%20saf%20sr/144/pic/5.jpg)
+
 #### For working shaders on mobile platforms with Forward Rendering.
 In asset this fix is already added to the general script.
 
@@ -89,7 +92,7 @@ public class WindZoneRot : MonoBehaviour
     }
 }
 ```
-![GitHub Logo](https://raw.githubusercontent.com/nvjob/nvjob.github.io/master/repo/unity%20assets/water%20shader%20saf%20sr/144/pic/1.jpg)
+
 ![GitHub Logo](https://raw.githubusercontent.com/nvjob/nvjob.github.io/master/repo/unity%20assets/water%20shader%20saf%20sr/144/pic/2.jpg)
 ![GitHub Logo](https://raw.githubusercontent.com/nvjob/nvjob.github.io/master/repo/unity%20assets/water%20shader%20saf%20sr/144/pic/3.jpg)
 ![GitHub Logo](https://raw.githubusercontent.com/nvjob/nvjob.github.io/master/repo/unity%20assets/water%20shader%20saf%20sr/144/pic/4.jpg)
