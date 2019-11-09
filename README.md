@@ -6,7 +6,7 @@
 
 Simple and fast water shader. This shader is suitable for scenes where water is not a key element of the scene, but a decorative element. Supported rendering path deferred and forward. It works on all platforms.
 
-**Previous Versions** - [github.com/nvjob/NVJOB-Water-Shader-old-versions](https://github.com/nvjob/NVJOB-Water-Shader-old-versions)
+**Previous Versions** - [github.com/nvjob/nvjob-water-shader-old-versions](https://github.com/nvjob/NVJOB-Water-Shader-old-versions)
 
 -------------------------------------------------------------------
 
