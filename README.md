@@ -55,8 +55,6 @@ public class Water : MonoBehaviour
 }
 ```
 
-![GitHub Logo](https://raw.githubusercontent.com/nvjob/nvjob.github.io/master/repo/unity%20assets/water%20shader%20saf%20sr/144/pic/5.jpg)
-
 #### For working shaders on mobile platforms with Forward Rendering.
 In asset this fix is already added to the general script.
 
@@ -92,6 +90,13 @@ public class WindZoneRot : MonoBehaviour
     }
 }
 ```
+
+![GitHub Logo](https://raw.githubusercontent.com/nvjob/nvjob.github.io/master/repo/unity%20assets/water%20shader%20saf%20sr/144/pic/5.jpg)
+
+#### Video manual:
+https://www.youtube.com/watch?v=Br8upLzvTVU <br>
+https://www.youtube.com/watch?v=94dRrLFMA1k
+
 -------------------------------------------------------------------
 
 ![GitHub Logo](https://raw.githubusercontent.com/nvjob/nvjob.github.io/master/repo/unity%20assets/water%20shader%20saf%20sr/144/pic/2.jpg)
