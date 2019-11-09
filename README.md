@@ -98,14 +98,16 @@ public class WindZoneRot : MonoBehaviour
 
 -------------------------------------------------------------------
 
-### Authors
-Designed by #NVJOB Nicholas Veselov - https://nvjob.github.io
+**Authors:**<br>
+#NVJOB Nicholas Veselov<br>
+https://nvjob.github.io
 
-### License
-MIT License - https://nvjob.github.io/mit-license
+**License:**<br>
+MIT License<br>
+Clarification of licenses: https://nvjob.github.io/mit-license
 
-### Donate
-Help for this project - https://nvjob.github.io/donate
+**Support:**<br>
+https://nvjob.github.io/support
 
-### Report a Problem
-Report a Problem / Issue Tracker / FAQ - https://nvjob.github.io/reportaproblem
+**Report a Problem / Issue Tracker / FAQ:**<br>
+https://nvjob.github.io/reportaproblem
