@@ -1,8 +1,9 @@
-# #NVJOB Water Shader - simple and fast 1.4.5
+# #NVJOB Water Shader v1.4.5. Built-in Render Pipeline.
 #### [nvjob.github.io/unity/nvjob-water-shader](https://nvjob.github.io/unity/nvjob-water-shader)
 
 ![GitHub Logo](https://raw.githubusercontent.com/nvjob/nvjob.github.io/master/repo/unity%20assets/water%20shader%20saf%20sr/144/pic/3.jpg)
 
+This shader does not work with SRP (HDRP, URP)!<br>
 Simple and fast water shader. This shader is suitable for scenes where water is not a key element of the scene, but a decorative element. Supported rendering path deferred and forward. It works on all platforms.
 
 **Previous Versions** - [github.com/nvjob/nvjob-water-shader-old-versions](https://github.com/nvjob/NVJOB-Water-Shader-old-versions)
