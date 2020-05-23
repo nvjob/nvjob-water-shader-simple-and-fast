@@ -104,12 +104,9 @@ https://www.youtube.com/watch?v=94dRrLFMA1k
 
 -------------------------------------------------------------------
 
-**Patrons:** [nvjob.github.io/patrons](https://nvjob.github.io/patrons)<br>
-*You can become one of the patrons, or make a sponsorship donation.*
-
--------------------------------------------------------------------
-
-**Authors:** [#NVJOB. Developer Nicholas Veselov. Разработчик Николай Веселов. Санкт-Петербург.](https://nvjob.github.io)
+**Authors:** 
+[#NVJOB. Nicholas Veselov Unity Developer](https://nvjob.github.io)<br>
+[Николай Веселов Unity Разработчик Санкт-Петербург.](https://nvjob.github.io)
 
 **License:** MIT License. [Clarification of licenses](https://nvjob.github.io/mit-license).
 
