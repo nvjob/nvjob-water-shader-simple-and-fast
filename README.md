@@ -1,4 +1,4 @@
-# #NVJOB Simple Water Shaders v1.5. Free Unity Asset. Built-in Render Pipeline.
+# #NVJOB Simple Water Shaders v1.5. Free Unity Asset.
 #### [nvjob.github.io/unity/nvjob-water-shader](https://nvjob.github.io/unity/nvjob-water-shader)
 
 ![GitHub Logo](https://raw.githubusercontent.com/nvjob/nvjob.github.io/master/repo/unity%20assets/water%20shader%20saf%20sr/144/pic/3.jpg)
@@ -9,11 +9,13 @@
 
 -------------------------------------------------------------------
 
-![GitHub Logo](https://raw.githubusercontent.com/nvjob/nvjob.github.io/master/repo/unity%20assets/water%20shader%20saf%20sr/144/pic/1.gif)
+### Full instructions
+
+Full instructions and description - [nvjob.github.io/unity/nvjob-water-shader](https://nvjob.github.io/unity/nvjob-water-shader)
 
 ### Prerequisites
 
-To work on the project, you will need a Unity version of at least 2019.1.8 (64-bit).
+To work on the project, you will need a Unity version of at least 2019.1.8 (Only Built-in Render Pipeline).
 
 ### Information
 
