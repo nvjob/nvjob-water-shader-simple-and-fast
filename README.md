@@ -5,13 +5,12 @@
 
 #NVJOB Simple Water Shaders are fast and easy water shaders running on mobile and desktop platforms. This shader does not use tessellation, only normal mapping and parallax. Supported rendering path deferred and forward (DepthTextureMode).
 
-**Previous Versions** - [github.com/nvjob/nvjob-water-shader-old-versions](https://github.com/nvjob/NVJOB-Water-Shader-old-versions)
-
 -------------------------------------------------------------------
 
 ### Full instructions
 
-Full instructions and description - [nvjob.github.io/unity/nvjob-water-shader](https://nvjob.github.io/unity/nvjob-water-shader)
+Full instructions and description - [nvjob.github.io/unity/nvjob-water-shader](https://nvjob.github.io/unity/nvjob-water-shader)<br>
+Previous Versions - [github.com/nvjob/nvjob-water-shader-old-versions](https://github.com/nvjob/NVJOB-Water-Shader-old-versions)
 
 ### Prerequisites
 
