@@ -106,10 +106,10 @@ https://www.youtube.com/watch?v=94dRrLFMA1k
 
 **Authors:** <br>
 [#NVJOB. Nicholas Veselov Unity Developer](https://nvjob.github.io)<br>
-[Николай Веселов Unity Разработчик Санкт-Петербург.](https://nvjob.github.io)
+[Николай Веселов Unity Разработчик Санкт-Петербург](https://nvjob.github.io)
 
 **License:** <br>
-MIT License. [Clarification of licenses](https://nvjob.github.io/mit-license).
+[MIT License. Clarification of licenses](https://nvjob.github.io/mit-license)
 
 **Support:** <br>
-[Report a Problem](https://nvjob.github.io/reportaproblem/).
+[Report a Problem](https://nvjob.github.io/reportaproblem/)
