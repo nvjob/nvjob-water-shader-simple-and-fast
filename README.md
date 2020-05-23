@@ -104,7 +104,7 @@ https://www.youtube.com/watch?v=94dRrLFMA1k
 
 -------------------------------------------------------------------
 
-**Authors:** 
+**Authors:** <br>
 [#NVJOB. Nicholas Veselov Unity Developer](https://nvjob.github.io)<br>
 [Николай Веселов Unity Разработчик Санкт-Петербург.](https://nvjob.github.io)
 
