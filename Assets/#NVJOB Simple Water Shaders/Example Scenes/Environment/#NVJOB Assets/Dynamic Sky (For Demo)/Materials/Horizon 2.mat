@@ -1,0 +1,111 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Horizon 2
+  m_Shader: {fileID: 4800000, guid: b79b2a4a26bb57f4690ea7a958e72e21, type: 3}
+  m_ShaderKeywords: DSKY_HORIZON STC_GTYPE_BRANCH
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: 2501
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _BumpMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailAlbedoMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailMask:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailNormalMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _EmissionMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MetallicGlossMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _OcclusionMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _ParallaxMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Texture1:
+        m_Texture: {fileID: 2800000, guid: ed8cf75488494a77adbd8f507cf085e1, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Texture2:
+        m_Texture: {fileID: 2800000, guid: 1590c18aede340e2ae832880dcd512da, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Texture3:
+        m_Texture: {fileID: 2800000, guid: 627ae4a9435043e6a1778e02d7a7c53e, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - _BumpScale: 1
+    - _Cutoff: 0.5
+    - _DetailNormalMapScale: 1
+    - _DstBlend: 0
+    - _Fluffiness: 0.41
+    - _GlossMapScale: 1
+    - _Glossiness: 0.5
+    - _GlossyReflections: 1
+    - _IntensityInput: 0.98
+    - _IntensityOutput: 1.49
+    - _IntensityT1: 2
+    - _IntensityT2: 2
+    - _IntensityT3: -0.72
+    - _Level0: 27.31
+    - _Level1: 1157
+    - _Metallic: 0
+    - _Mode: 0
+    - _OcclusionStrength: 1
+    - _Parallax: 0.02
+    - _SmoothnessTextureChannel: 0
+    - _SpecularHighlights: 1
+    - _SrcBlend: 1
+    - _TextureUv1: 4
+    - _TextureUv2: 4
+    - _TextureUv3: 1.7
+    - _UVSec: 0
+    - _VectorX1: 0.5
+    - _VectorX2: 1
+    - _VectorX3: -0.7
+    - _VectorY1: 1.2
+    - _VectorY2: 0.5
+    - _VectorY3: -0.7
+    - _ZWrite: 1
+    m_Colors:
+    - _Color: {r: 0.96862745, g: 0.92156863, b: 0.77254903, a: 0.70980394}
+    - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
+    - _Level0Color: {r: 0.21176471, g: 0.24313726, b: 0.27058825, a: 1}
+    - _Level1Color: {r: 0.38431373, g: 0.79607844, b: 1, a: 0}
+    - _TextureV1: {r: 0.9, g: 1, b: 0, a: 0}
+    - _TextureV2: {r: 1.3, g: 1.2, b: 0, a: 0}
+    - _TextureV3: {r: -1, g: -1, b: 0, a: 0}
