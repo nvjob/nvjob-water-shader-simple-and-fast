@@ -3,7 +3,10 @@
 
 ### Information
 
-#NVJOB Simple Water Shaders are fast and easy water shaders running on mobile and desktop platforms. The asset includes two shaders, Specular and Surface. Water over time changes the direction vector, the direction of movement changes in a circle. You can also set the direction of water movement (for example, synchronize the direction of water with the direction of the Wind Zone).<br>
+#NVJOB Simple Water Shaders are fast and easy water shaders running on mobile and desktop platforms.<br>
+The asset includes two shaders, Specular and Surface.<br>
+Water over time changes the direction vector, the direction of movement changes in a circle.<br>
+You can also set the direction of water movement (for example, synchronize the direction of water with the direction of the Wind Zone).<br>
 These shaders do not use tessellation, only normal mapping and parallax.<br>
 Supported rendering path deferred and forward (DepthTextureMode).<br>
 This shader is well suited for decorative purposes, in scenes where water is not a key element.
