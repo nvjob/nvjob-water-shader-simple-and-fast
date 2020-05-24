@@ -10,9 +10,10 @@ This shader is well suited for decorative purposes, in scenes where water is not
 Full instructions and description - [nvjob.github.io/unity/nvjob-water-shader](https://nvjob.github.io/unity/nvjob-water-shader)<br>
 Previous Versions - [github.com/nvjob/nvjob-water-shader-old-versions](https://github.com/nvjob/NVJOB-Water-Shader-old-versions)
 
-### Prerequisites
+### Compatibility
 
-To work on the project, you will need a Unity version of at least 2019.1.8 (Only Built-in Render Pipeline).
+Built-in Render Pipeline.<br>
+For Unity version of at least 2019.1.8 (64-bit).<br>
 
 -------------------------------------------------------------------
 
