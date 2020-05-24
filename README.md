@@ -16,14 +16,6 @@ To work on the project, you will need a Unity version of at least 2019.1.8 (Only
 
 -------------------------------------------------------------------
 
-
-![GitHub Logo](https://raw.githubusercontent.com/nvjob/nvjob.github.io/master/repo/unity%20assets/simple-water-shaders/pic/3.jpg)
-![GitHub Logo](https://raw.githubusercontent.com/nvjob/nvjob.github.io/master/repo/unity%20assets/simple-water-shaders/pic/2.jpg)
-![GitHub Logo](https://raw.githubusercontent.com/nvjob/nvjob.github.io/master/repo/unity%20assets/simple-water-shaders/pic/1.jpg)
-![GitHub Logo](https://raw.githubusercontent.com/nvjob/nvjob.github.io/master/repo/unity%20assets/simple-water-shaders/pic/4.jpg)
-
--------------------------------------------------------------------
-
 **Authors:** <br>
 [#NVJOB. Nicholas Veselov Unity Developer.](https://nvjob.github.io)<br>
 [Николай Веселов Unity Разработчик Санкт-Петербург.](https://nvjob.github.io)
@@ -33,3 +25,10 @@ To work on the project, you will need a Unity version of at least 2019.1.8 (Only
 
 **Support:** <br>
 [Report a Problem.](https://nvjob.github.io/reportaproblem/)
+
+-------------------------------------------------------------------
+
+![GitHub Logo](https://raw.githubusercontent.com/nvjob/nvjob.github.io/master/repo/unity%20assets/simple-water-shaders/pic/3.jpg)
+![GitHub Logo](https://raw.githubusercontent.com/nvjob/nvjob.github.io/master/repo/unity%20assets/simple-water-shaders/pic/2.jpg)
+![GitHub Logo](https://raw.githubusercontent.com/nvjob/nvjob.github.io/master/repo/unity%20assets/simple-water-shaders/pic/1.jpg)
+![GitHub Logo](https://raw.githubusercontent.com/nvjob/nvjob.github.io/master/repo/unity%20assets/simple-water-shaders/pic/4.jpg)
