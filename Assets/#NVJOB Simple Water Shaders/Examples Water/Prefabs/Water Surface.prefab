@@ -95,4 +95,5 @@ MonoBehaviour:
   UvBumpRotateSpeed: 0.4
   UvBumpRotateDistance: 4
   depthTextureModeOn: 1
+  waterSyncWind: 0
   windZone: {fileID: 0}

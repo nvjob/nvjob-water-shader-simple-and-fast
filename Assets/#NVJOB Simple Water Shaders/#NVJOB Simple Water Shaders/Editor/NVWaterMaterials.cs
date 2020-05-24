@@ -452,7 +452,7 @@ public class SimpleWaterShaderEditor : Editor
 
     Color smLineColor = Color.HSVToRGB(0, 0, 0.55f), bgLineColor = Color.HSVToRGB(0, 0, 0.3f);
     int smLinePadding = 20, bgLinePadding = 35;
-    SerializedProperty uvRotateSpeed, uvRotateDistance, uvBumpRotateSpeed, uvBumpRotateDistance, depthTextureModeOn, windZone;
+    SerializedProperty uvRotateSpeed, uvRotateDistance, uvBumpRotateSpeed, uvBumpRotateDistance, depthTextureModeOn, windZone, waterSyncWind;
 
 
     ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -470,6 +470,7 @@ public class SimpleWaterShaderEditor : Editor
 
         depthTextureModeOn = serializedObject.FindProperty("depthTextureModeOn");
 
+        waterSyncWind = serializedObject.FindProperty("waterSyncWind");
         windZone = serializedObject.FindProperty("windZone");
 
         //--------------
@@ -525,6 +526,8 @@ public class SimpleWaterShaderEditor : Editor
 
         EditorGUILayout.LabelField("Wind Zone:", EditorStyles.boldLabel);
         NVWaterMaterials.DrawUILine(smLineColor, 1, smLinePadding);
+
+        EditorGUILayout.PropertyField(waterSyncWind, new GUIContent("Water Sync With Wind"));
 
         EditorGUILayout.PropertyField(windZone, new GUIContent("Wind Zone Object"));
         EditorGUILayout.HelpBox("Optional. To synchronize the wind direction with the direction of water movement.", MessageType.None);

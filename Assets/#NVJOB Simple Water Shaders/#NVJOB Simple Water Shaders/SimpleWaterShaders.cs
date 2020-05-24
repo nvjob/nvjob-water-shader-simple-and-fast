@@ -25,6 +25,7 @@ public class SimpleWaterShaders : MonoBehaviour
     public float UvBumpRotateSpeed = 0.4f;
     public float UvBumpRotateDistance = 2.0f;
     public bool depthTextureModeOn = true;
+    public bool waterSyncWind;
     public Transform windZone;
 
     //--------------
@@ -66,8 +67,22 @@ public class SimpleWaterShaders : MonoBehaviour
     {
         //--------------
 
-        lwVector = Quaternion.AngleAxis(Time.time * UvRotateSpeed, Vector3.forward) * Vector2.one * UvRotateDistance;
-        lwNVector = Quaternion.AngleAxis(Time.time * UvBumpRotateSpeed, Vector3.forward) * Vector2.one * UvBumpRotateDistance;
+        if (waterSyncWind == false)
+        {
+            lwVector = Quaternion.AngleAxis(Time.time * UvRotateSpeed, Vector3.forward) * Vector2.one * UvRotateDistance;
+            lwNVector = Quaternion.AngleAxis(Time.time * UvBumpRotateSpeed, Vector3.forward) * Vector2.one * UvBumpRotateDistance;
+            if (windZone != null) windZone.rotation = Quaternion.LookRotation(new Vector3(lwNVector.x, 0, lwNVector.y), Vector3.zero) * Quaternion.Euler(0, -90, 0);
+        }
+        else
+        {
+            if (windZone != null)
+            {
+                Quaternion windQ = new Quaternion(windZone.rotation.x, windZone.rotation.z, windZone.rotation.y, -windZone.rotation.w);
+                Vector3 windV = windQ * Vector3.up * 0.2f;
+                lwVector = windV * Time.time * UvRotateSpeed;
+                lwNVector = windV * Time.time * UvBumpRotateSpeed;
+            }
+        }
 
         //--------------
 
@@ -75,10 +90,6 @@ public class SimpleWaterShaders : MonoBehaviour
         Shader.SetGlobalFloat("_WaterLocalUvZ", lwVector.y);
         Shader.SetGlobalFloat("_WaterLocalUvNX", lwNVector.x);
         Shader.SetGlobalFloat("_WaterLocalUvNZ", lwNVector.y);
-
-        //--------------
-
-        if (windZone != null) windZone.rotation = Quaternion.LookRotation(new Vector3(lwNVector.x, 0, lwNVector.y), Vector3.zero);
 
         //--------------
     }
