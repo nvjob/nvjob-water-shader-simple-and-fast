@@ -1,10 +1,10 @@
 # #NVJOB Simple Water Shaders v1.5. Free Unity Asset.
-#### [nvjob.github.io/unity/nvjob-water-shader](https://nvjob.github.io/unity/nvjob-water-shader)
+#### [nvjob.github.io/unity/nvjob-simple-water-shaders](https://nvjob.github.io/unity/nvjob-simple-water-shaders)
 
-![GitHub Logo](https://raw.githubusercontent.com/nvjob/nvjob.github.io/master/repo/unity%20assets/water%20shader%20saf%20sr/144/pic/3.jpg)
-![GitHub Logo](https://raw.githubusercontent.com/nvjob/nvjob.github.io/master/repo/unity%20assets/water%20shader%20saf%20sr/144/pic/2.jpg)
-![GitHub Logo](https://raw.githubusercontent.com/nvjob/nvjob.github.io/master/repo/unity%20assets/water%20shader%20saf%20sr/144/pic/1.jpg)
-![GitHub Logo](https://raw.githubusercontent.com/nvjob/nvjob.github.io/master/repo/unity%20assets/water%20shader%20saf%20sr/144/pic/4.jpg)
+![GitHub Logo](https://raw.githubusercontent.com/nvjob/nvjob.github.io/master/repo/unity%20assets/simple-water-shaders/pic/3.jpg)
+![GitHub Logo](https://raw.githubusercontent.com/nvjob/nvjob.github.io/master/repo/unity%20assets/simple-water-shaders/pic/2.jpg)
+![GitHub Logo](https://raw.githubusercontent.com/nvjob/nvjob.github.io/master/repo/unity%20assets/simple-water-shaders/pic/1.jpg)
+![GitHub Logo](https://raw.githubusercontent.com/nvjob/nvjob.github.io/master/repo/unity%20assets/simple-water-shaders/pic/4.jpg)
 
 
 #NVJOB Simple Water Shaders are fast and easy water shaders running on mobile and desktop platforms. This shader does not use tessellation, only normal mapping and parallax. Supported rendering path deferred and forward (DepthTextureMode).
