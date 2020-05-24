@@ -6,7 +6,7 @@
 
 Full instructions and description - [nvjob.github.io/unity/nvjob-water-shader](https://nvjob.github.io/unity/nvjob-water-shader)<br>
 Previous Versions - [github.com/nvjob/nvjob-water-shader-old-versions](https://github.com/nvjob/NVJOB-Water-Shader-old-versions)<br>
-Web Demo - nvjob.github.io/web-demo/nvjob-water-shader](https://nvjob.github.io/web-demo/nvjob-water-shader/)
+Web Demo - [nvjob.github.io/web-demo/nvjob-water-shader](https://nvjob.github.io/web-demo/nvjob-water-shader/)
 
 ### Features:
 - Two shaders, Specular and Surface.
