@@ -13,7 +13,7 @@ Previous Versions - [github.com/nvjob/nvjob-water-shader-old-versions](https://g
 ### Compatibility
 
 Built-in Render Pipeline.<br>
-For Unity version of at least 2019.1.8 (64-bit).<br>
+For Unity version of at least 2019.1.8 (64-bit).
 
 -------------------------------------------------------------------
 
