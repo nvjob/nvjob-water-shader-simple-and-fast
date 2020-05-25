@@ -1,10 +1,10 @@
 ﻿// Copyright (c) 2016 Unity Technologies. MIT license - license_unity.txt
 // #NVJOB Simple Water Shaders. MIT license - license_nvjob.txt
-// #NVJOB Simple Water Shaders v1.5 - https://nvjob.github.io/unity/nvjob-water-shader
+// #NVJOB Simple Water Shaders v1.5 - https://nvjob.github.io/unity/nvjob-simple-water-shaders
 // #NVJOB Nicholas Veselov - https://nvjob.github.io
 
 
-Shader "#NVJOB/Simple Water Shader/Water Surface" {
+Shader "#NVJOB/Simple Water Shaders/Water Surface" {
 
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
