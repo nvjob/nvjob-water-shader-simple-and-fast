@@ -30,8 +30,8 @@ Properties{
 [HideInInspector]_NormalMap2Tiling("Normal Map 2 Tiling", float) = 1.2
 [HideInInspector]_NormalMap2Strength("Normal Map 2 Strength", Range(0.001, 10)) = 1
 [HideInInspector]_NormalMap2Flow("Normal Map 2 Flow", float) = 0.5
-[HideInInspector]_MicrowaveScale("Microwave Scale", Range(0.5, 10)) = 1
-[HideInInspector]_MicrowaveStrength("Microwave Strength", Range(0.001, 1.5)) = 0.5
+[HideInInspector]_MicrowaveScale("Micro Waves Scale", Range(0.5, 10)) = 1
+[HideInInspector]_MicrowaveStrength("Micro Waves Strength", Range(0.001, 1.5)) = 0.5
 [HideInInspector][NoScaleOffset]_ParallaxMap("Parallax Map", 2D) = "black" {}
 [HideInInspector]_ParallaxMapTiling("Parallax Map Tiling", float) = 1
 [HideInInspector]_ParallaxAmount("Parallax Amount", float) = 0.1

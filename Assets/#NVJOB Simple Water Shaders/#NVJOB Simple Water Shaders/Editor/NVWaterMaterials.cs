@@ -254,7 +254,7 @@ internal class NVWaterMaterials : MaterialEditor
                 allProps.Remove(microwaveScale);
                 allProps.Remove(microwaveStrength);
 
-                bool? enable = EditorGUILayout.Toggle("Microwave Enable", enableMicrowave.First());
+                bool? enable = EditorGUILayout.Toggle("Micro Waves Enable", enableMicrowave.First());
                 if (enable != null)
                 {
                     foreach (Material m in targets.Cast<Material>())
