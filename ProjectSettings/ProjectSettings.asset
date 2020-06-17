@@ -4,7 +4,7 @@
 PlayerSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 16
-  productGUID: 442c5c719464acc439fb32a00342176b
+  productGUID: dba9c476d99362f498dd7295c1eb81bd
   AndroidProfiler: 0
   AndroidFilterTouchesWhenObscured: 0
   AndroidEnableSustainedPerformanceMode: 0
@@ -119,7 +119,7 @@ PlayerSettings:
     16:10: 1
     16:9: 1
     Others: 1
-  bundleVersion: 1.5
+  bundleVersion: 1.5.1
   preloadedAssets: []
   metroInputSource: 0
   wsaTransparentSwapchain: 0

@@ -1,6 +1,6 @@
 ﻿// Copyright (c) 2016 Unity Technologies. MIT license - license_unity.txt
 // #NVJOB Simple Water Shaders. MIT license - license_nvjob.txt
-// #NVJOB Simple Water Shaders v1.5 - https://nvjob.github.io/unity/nvjob-simple-water-shaders
+// #NVJOB Simple Water Shaders v1.5.1 - https://nvjob.github.io/unity/nvjob-simple-water-shaders
 // #NVJOB Nicholas Veselov - https://nvjob.github.io
 
 
@@ -70,42 +70,42 @@ sampler2D _AlbedoTex1;
 sampler2D _NormalMap1;
 sampler2D_float _CameraDepthTexture;
 float4 _CameraDepthTexture_TexelSize;
-fixed4 _AlbedoColor;
-half _Glossiness;
-half _Metallic;
-half _AlbedoIntensity;
-half _AlbedoContrast;
-half _NormalMap1Strength;
-half _SoftFactor;
-half _WaterLocalUvX;
-half _WaterLocalUvZ;
-half _WaterLocalUvNX;
-half _WaterLocalUvNZ;
+float4 _AlbedoColor;
+float _Glossiness;
+float _Metallic;
+float _AlbedoIntensity;
+float _AlbedoContrast;
+float _NormalMap1Strength;
+float _SoftFactor;
+float _WaterLocalUvX;
+float _WaterLocalUvZ;
+float _WaterLocalUvNX;
+float _WaterLocalUvNZ;
 
 #ifdef EFFECT_ALBEDO2
 sampler2D _AlbedoTex2;
-half _Albedo2Tiling;
-half _Albedo2Flow;
+float _Albedo2Tiling;
+float _Albedo2Flow;
 #endif
 
 #ifdef EFFECT_NORMALMAP2
 sampler2D _NormalMap2;
-half _NormalMap2Tiling;
-half _NormalMap2Strength;
-half _ParallaxNormal2Offset;
-half _NormalMap2Flow;
+float _NormalMap2Tiling;
+float _NormalMap2Strength;
+float _ParallaxNormal2Offset;
+float _NormalMap2Flow;
 #endif
 
 #ifdef EFFECT_MICROWAVE
-half _MicrowaveScale;
-half _MicrowaveStrength;
+float _MicrowaveScale;
+float _MicrowaveStrength;
 #endif
 
 #ifdef EFFECT_PARALLAX
 sampler2D _ParallaxMap;
-half _ParallaxAmount;
-half _ParallaxMapTiling;
-half _ParallaxFlow;
+float _ParallaxAmount;
+float _ParallaxMapTiling;
+float _ParallaxFlow;
 #endif
 
 //----------------------------------------------
@@ -132,35 +132,35 @@ COMPUTE_EYEDEPTH(o.eyeDepth);
 void surf(Input IN, inout SurfaceOutputStandard o) {
 
 #ifdef EFFECT_PARALLAX
-half2 uvnh = IN.uv_NormalMap1;
-uvnh.xy += half2(_WaterLocalUvNX, _WaterLocalUvNZ) * -_ParallaxFlow;
-half h = tex2D(_ParallaxMap, uvnh * _ParallaxMapTiling).r;
-half2 offset = ParallaxOffset(h, _ParallaxAmount, IN.viewDir);
+float2 uvnh = IN.uv_NormalMap1;
+uvnh.xy += float2(_WaterLocalUvNX, _WaterLocalUvNZ) * -_ParallaxFlow;
+float h = tex2D(_ParallaxMap, uvnh * _ParallaxMapTiling).r;
+float2 offset = ParallaxOffset(h, _ParallaxAmount, IN.viewDir);
 IN.uv_AlbedoTex1 -= offset;
 IN.uv_NormalMap1 += offset;
-half2 uvn = IN.uv_NormalMap1;
-uvn.xy += half2(_WaterLocalUvNX, _WaterLocalUvNZ);
+float2 uvn = IN.uv_NormalMap1;
+uvn.xy += float2(_WaterLocalUvNX, _WaterLocalUvNZ);
 #ifdef EFFECT_NORMALMAP2
-half2 uvnd = IN.uv_NormalMap1 + (offset * _ParallaxNormal2Offset);
-uvnd.xy += half2(_WaterLocalUvNX, _WaterLocalUvNZ) * _NormalMap2Flow;
+float2 uvnd = IN.uv_NormalMap1 + (offset * _ParallaxNormal2Offset);
+uvnd.xy += float2(_WaterLocalUvNX, _WaterLocalUvNZ) * _NormalMap2Flow;
 #endif
 #else
-half2 uvn = IN.uv_NormalMap1;
-uvn.xy += half2(_WaterLocalUvNX, _WaterLocalUvNZ);
+float2 uvn = IN.uv_NormalMap1;
+uvn.xy += float2(_WaterLocalUvNX, _WaterLocalUvNZ);
 #ifdef EFFECT_NORMALMAP2
-half2 uvnd = IN.uv_NormalMap1;
-uvnd.xy += half2(_WaterLocalUvNX, _WaterLocalUvNZ) * _NormalMap2Flow;
+float2 uvnd = IN.uv_NormalMap1;
+uvnd.xy += float2(_WaterLocalUvNX, _WaterLocalUvNZ) * _NormalMap2Flow;
 #endif
 #endif
 
-half2 uv = IN.uv_AlbedoTex1;
-uv.xy += half2(_WaterLocalUvX, _WaterLocalUvZ);
+float2 uv = IN.uv_AlbedoTex1;
+uv.xy += float2(_WaterLocalUvX, _WaterLocalUvZ);
 #ifdef EFFECT_ALBEDO2
-half2 uvd = IN.uv_AlbedoTex1;
-uvd.xy += half2(_WaterLocalUvX, _WaterLocalUvZ) * _Albedo2Flow;
+float2 uvd = IN.uv_AlbedoTex1;
+uvd.xy += float2(_WaterLocalUvX, _WaterLocalUvZ) * _Albedo2Flow;
 #endif
 
-fixed4 tex = tex2D(_AlbedoTex1, uv) * _AlbedoColor;
+float4 tex = tex2D(_AlbedoTex1, uv) * _AlbedoColor;
 #ifdef EFFECT_ALBEDO2
 tex *= tex2D(_AlbedoTex2, uvd * _Albedo2Tiling);
 #endif
@@ -170,7 +170,7 @@ o.Albedo = ((tex - 0.5) * _AlbedoContrast + 0.5).rgb;
 o.Metallic = _Metallic;
 o.Smoothness = _Glossiness;
 
-fixed3 normal = UnpackNormal(tex2D(_NormalMap1, uvn)) * _NormalMap1Strength;
+float3 normal = UnpackNormal(tex2D(_NormalMap1, uvn)) * _NormalMap1Strength;
 #ifdef EFFECT_NORMALMAP2
 normal += UnpackNormal(tex2D(_NormalMap2, uvnd * _NormalMap2Tiling)) * _NormalMap2Strength;
 #ifdef EFFECT_MICROWAVE
@@ -183,8 +183,8 @@ o.Normal = normalize(normal / 2);
 o.Normal = normal;
 #endif
 
-half rawZ = SAMPLE_DEPTH_TEXTURE_PROJ(_CameraDepthTexture, UNITY_PROJ_COORD(IN.screenPos + 0.0001));
-half fade = saturate(_SoftFactor * (LinearEyeDepth(rawZ) - IN.eyeDepth));
+float rawZ = SAMPLE_DEPTH_TEXTURE_PROJ(_CameraDepthTexture, UNITY_PROJ_COORD(IN.screenPos + 0.0001));
+float fade = saturate(_SoftFactor * (LinearEyeDepth(rawZ) - IN.eyeDepth));
 o.Alpha = _AlbedoColor.a * fade;
 
 }

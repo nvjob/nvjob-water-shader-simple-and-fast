@@ -71,16 +71,16 @@ return c;
 
 #if defined(DSKY_CLOUD_1) || defined(DSKY_CLOUD_2)
 sampler2D _Texture1, _Texture2, _Texture3;
-half4 _Color;
-half _TextureUv1, _VectorX1, _VectorY1, _IntensityT1;
-half _TextureUv2, _VectorX2, _VectorY2, _IntensityT2;
-half _TextureUv3, _VectorX3, _VectorY3, _IntensityT3;
-half _IntensityInput, _IntensityOutput, _Fluffiness;
-half _SkyShaderUvX, _SkyShaderUvZ;
+float4 _Color;
+float _TextureUv1, _VectorX1, _VectorY1, _IntensityT1;
+float _TextureUv2, _VectorX2, _VectorY2, _IntensityT2;
+float _TextureUv3, _VectorX3, _VectorY3, _IntensityT3;
+float _IntensityInput, _IntensityOutput, _Fluffiness;
+float _SkyShaderUvX, _SkyShaderUvZ;
 #endif
 
 #if defined(DSKY_HORIZON)
-half _Level0, _Level1;
+float _Level0, _Level1;
 fixed4 _Level0Color, _Level1Color;
 #endif
 
@@ -122,45 +122,45 @@ half4 tex;
 
 #if defined(DSKY_CLOUD_1)
 tex = _Color;
-half2 uv = IN.posTex;
-uv.xy += half2(_SkyShaderUvX * _VectorX1, _SkyShaderUvZ * _VectorY1);
+float2 uv = IN.posTex;
+uv.xy += float2(_SkyShaderUvX * _VectorX1, _SkyShaderUvZ * _VectorY1);
 tex *= tex2D(_Texture1, uv * _TextureUv1) * _IntensityT1;
-half2 uvd = IN.posTex;
-uvd.xy += half2(_SkyShaderUvX * _VectorX2, _SkyShaderUvZ * _VectorY2);
+float2 uvd = IN.posTex;
+uvd.xy += float2(_SkyShaderUvX * _VectorX2, _SkyShaderUvZ * _VectorY2);
 tex *= tex2D(_Texture2, uvd * _TextureUv2).r * _IntensityT2;
-half2 uvdd = IN.posTex;
-uvdd.xy += half2(_SkyShaderUvX * _VectorX3, _SkyShaderUvZ * _VectorY3);
+float2 uvdd = IN.posTex;
+uvdd.xy += float2(_SkyShaderUvX * _VectorX3, _SkyShaderUvZ * _VectorY3);
 tex *= tex2D(_Texture3, uvdd * _TextureUv3).r * _IntensityT3;
 tex *= _IntensityInput;
-half4 albedoEnd = normalize((tex - 0.5) * _Fluffiness + 0.5);
+float4 albedoEnd = normalize((tex - 0.5) * _Fluffiness + 0.5);
 albedoEnd *= _IntensityOutput;
-half alphaEnd = tex.a;
+float alphaEnd = tex.a;
 #endif
 
 #if defined(DSKY_CLOUD_2)
 tex = _Color;
-half2 uv = IN.posTex;
-uv.xy += half2(_SkyShaderUvX * _VectorX1, _SkyShaderUvZ * _VectorY1);
+float2 uv = IN.posTex;
+uv.xy += float2(_SkyShaderUvX * _VectorX1, _SkyShaderUvZ * _VectorY1);
 tex *= tex2D(_Texture1, uv * _TextureUv1).r * _IntensityT1;
-half2 uvd = IN.posTex;
-uvd.xy += half2(_SkyShaderUvX * _VectorX2, _SkyShaderUvZ * _VectorY2);
+float2 uvd = IN.posTex;
+uvd.xy += float2(_SkyShaderUvX * _VectorX2, _SkyShaderUvZ * _VectorY2);
 tex *= tex2D(_Texture2, uvd * _TextureUv2).g * _IntensityT2;
-half2 uvdd = IN.posTex;
-uvdd.xy += half2(_SkyShaderUvX * _VectorX3, _SkyShaderUvZ * _VectorY3);
+float2 uvdd = IN.posTex;
+uvdd.xy += float2(_SkyShaderUvX * _VectorX3, _SkyShaderUvZ * _VectorY3);
 tex *= tex2D(_Texture3, uvdd * _TextureUv3).b * _IntensityT3;
 tex *= _IntensityInput;
-half4 albedoEnd = normalize((tex - 0.5) * _Fluffiness + 0.5);
+float4 albedoEnd = normalize((tex - 0.5) * _Fluffiness + 0.5);
 albedoEnd *= _IntensityOutput;
-half alphaEnd = tex.a;
+float alphaEnd = tex.a;
 #endif
 
 #if defined(DSKY_HORIZON)
-half4 pixelWorldSpacePosition = IN.worldPos.y;
-half pixelWpY = pixelWorldSpacePosition.y;
+float4 pixelWorldSpacePosition = IN.worldPos.y;
+float pixelWpY = pixelWorldSpacePosition.y;
 if (pixelWpY >= _Level1) tex = lerp(_Level0Color, _Level1Color, (pixelWpY - _Level0) / (_Level1 - _Level0));
 if (pixelWpY < _Level0) tex = _Level0Color;
-half3 albedoEnd = tex.rgb;
-half alphaEnd = tex.a;
+float3 albedoEnd = tex.rgb;
+float alphaEnd = tex.a;
 #endif
 
 o.Albedo = albedoEnd;
