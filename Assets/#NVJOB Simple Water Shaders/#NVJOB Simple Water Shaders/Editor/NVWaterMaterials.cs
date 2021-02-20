@@ -1,6 +1,6 @@
 ﻿// Copyright (c) 2016 Unity Technologies. MIT license - license_unity.txt
 // #NVJOB Simple Water Shaders. MIT license - license_nvjob.txt
-// #NVJOB Simple Water Shaders v1.5.1 - https://nvjob.github.io/unity/nvjob-simple-water-shaders
+// #NVJOB Simple Water Shaders v1.6 - https://nvjob.github.io/unity/nvjob-simple-water-shaders
 // #NVJOB Nicholas Veselov - https://nvjob.github.io
 
 
@@ -52,6 +52,7 @@ internal class NVWaterMaterials : MaterialEditor
         NormalMaps(allProps);
         ParallaxMap(allProps);
         Reflection(allProps);
+        MirrorReflection(allProps);
 
         //--------------
 
@@ -387,6 +388,54 @@ internal class NVWaterMaterials : MaterialEditor
     ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
+    void MirrorReflection(List<MaterialProperty> allProps)
+    {
+        //--------------
+
+        DrawUILine(bgLineColor, 2, bgLinePadding);
+        EditorGUILayout.LabelField("Mirror Reflection Settings:", EditorStyles.boldLabel);
+        DrawUILine(smLineColor, 1, smLinePadding);
+
+        //--------------
+
+        MaterialProperty mirrorColor = allProps.Find(prop => prop.name == "_MirrorColor");
+        MaterialProperty mirrorDepthColor = allProps.Find(prop => prop.name == "_MirrorDepthColor");
+        MaterialProperty mirrorFPOW = allProps.Find(prop => prop.name == "_MirrorFPOW");
+        MaterialProperty mirrorR0 = allProps.Find(prop => prop.name == "_MirrorR0");
+        IEnumerable<bool> enableMirrorReflection = targets.Select(t => ((Material)t).shaderKeywords.Contains("EFFECT_MIRROR"));
+
+        if (enableMirrorReflection != null && mirrorColor != null && mirrorDepthColor != null && mirrorFPOW != null && mirrorR0 != null)
+        {
+            allProps.Remove(mirrorColor);
+            allProps.Remove(mirrorDepthColor);
+            allProps.Remove(mirrorFPOW);
+            allProps.Remove(mirrorR0);
+
+            bool? enable = EditorGUILayout.Toggle("Mirror Reflection Enable", enableMirrorReflection.First());
+            if (enable != null)
+            {
+                foreach (Material m in targets.Cast<Material>())
+                {
+                    if (enable.Value) m.EnableKeyword("EFFECT_MIRROR");
+                    else m.DisableKeyword("EFFECT_MIRROR");
+                }
+            }
+            if (enableMirrorReflection.First())
+            {
+                ShaderProperty(mirrorColor, mirrorColor.displayName);
+                ShaderProperty(mirrorDepthColor, mirrorDepthColor.displayName);
+                ShaderProperty(mirrorFPOW, mirrorFPOW.displayName);
+                ShaderProperty(mirrorR0, mirrorR0.displayName);
+            }
+        }
+
+        //--------------
+    }
+
+
+    ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
     public static void Header()
     {
         //--------------
@@ -395,7 +444,7 @@ internal class NVWaterMaterials : MaterialEditor
         EditorGUILayout.Space();
         GUIStyle guiStyle = new GUIStyle();
         guiStyle.fontSize = 17;
-        EditorGUILayout.LabelField("#NVJOB Simple Water Shaders (v1.5)", guiStyle);
+        EditorGUILayout.LabelField("#NVJOB Simple Water Shaders (v1.6)", guiStyle);
 
         //--------------
     }
@@ -453,6 +502,7 @@ public class SimpleWaterShaderEditor : Editor
     Color smLineColor = Color.HSVToRGB(0, 0, 0.55f), bgLineColor = Color.HSVToRGB(0, 0, 0.3f);
     int smLinePadding = 20, bgLinePadding = 35;
     SerializedProperty uvRotateSpeed, uvRotateDistance, uvBumpRotateSpeed, uvBumpRotateDistance, depthTextureModeOn, windZone, waterSyncWind;
+    SerializedProperty mirrorOn, disablePixelLights, mirrorBackSide, textureSize, clipPlaneOffset;
 
 
     ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -472,6 +522,12 @@ public class SimpleWaterShaderEditor : Editor
 
         waterSyncWind = serializedObject.FindProperty("waterSyncWind");
         windZone = serializedObject.FindProperty("windZone");
+
+        mirrorOn = serializedObject.FindProperty("mirrorOn");
+        disablePixelLights = serializedObject.FindProperty("disablePixelLights");
+        mirrorBackSide = serializedObject.FindProperty("mirrorBackSide");
+        textureSize = serializedObject.FindProperty("textureSize");
+        clipPlaneOffset = serializedObject.FindProperty("clipPlaneOffset");
 
         //--------------
     }
@@ -531,6 +587,19 @@ public class SimpleWaterShaderEditor : Editor
 
         EditorGUILayout.PropertyField(windZone, new GUIContent("Wind Zone Object"));
         EditorGUILayout.HelpBox("Optional. To synchronize the wind direction with the direction of water movement.", MessageType.None);
+
+        //--------------
+
+        NVWaterMaterials.DrawUILine(bgLineColor, 2, bgLinePadding);
+
+        EditorGUILayout.LabelField("Mirror Reflection:", EditorStyles.boldLabel);
+        NVWaterMaterials.DrawUILine(smLineColor, 1, smLinePadding);
+
+        EditorGUILayout.PropertyField(mirrorOn, new GUIContent("Mirror Reflection Enable"));
+        EditorGUILayout.PropertyField(disablePixelLights, new GUIContent("Disable Pixel Lights"));
+        EditorGUILayout.PropertyField(mirrorBackSide, new GUIContent("Mirror Back Side"));
+        EditorGUILayout.PropertyField(textureSize, new GUIContent("Mirror Texture Size"));
+        EditorGUILayout.PropertyField(clipPlaneOffset, new GUIContent("Clipping plane offset"));
 
         //--------------
 

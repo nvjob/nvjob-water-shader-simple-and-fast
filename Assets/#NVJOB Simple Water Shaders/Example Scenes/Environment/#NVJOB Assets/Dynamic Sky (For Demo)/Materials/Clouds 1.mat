@@ -8,7 +8,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Clouds 1
-  m_Shader: {fileID: 4800000, guid: b79b2a4a26bb57f4690ea7a958e72e21, type: 3}
+  m_Shader: {fileID: 4800000, guid: 46ea731fda72473a86c17545c13a4f36, type: 3}
   m_ShaderKeywords: DSKY_CLOUD_2 STC_GTYPE_BRANCH
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -56,15 +56,15 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Texture1:
-        m_Texture: {fileID: 2800000, guid: ed8cf75488494a77adbd8f507cf085e1, type: 3}
+        m_Texture: {fileID: 2800000, guid: 7829f3ae2a8f40c9b97085c7ad6082fe, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Texture2:
-        m_Texture: {fileID: 2800000, guid: 1590c18aede340e2ae832880dcd512da, type: 3}
+        m_Texture: {fileID: 2800000, guid: 8fa147df981f409097cad2e8ee2ae996, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Texture3:
-        m_Texture: {fileID: 2800000, guid: 627ae4a9435043e6a1778e02d7a7c53e, type: 3}
+        m_Texture: {fileID: 2800000, guid: 5b588059252a43bca4096c2743248491, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
@@ -102,7 +102,7 @@ Material:
     - _VectorY3: -0.7
     - _ZWrite: 1
     m_Colors:
-    - _Color: {r: 0.96862745, g: 0.92156863, b: 0.77254903, a: 0.70980394}
+    - _Color: {r: 1, g: 0.94048584, b: 0.8016194, a: 0.70980394}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _Level0Color: {r: 0.37, g: 0.78, b: 0.92, a: 1}
     - _Level1Color: {r: 0.65, g: 0.86, b: 0.63, a: 1}

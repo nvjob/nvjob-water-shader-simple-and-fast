@@ -58,7 +58,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 2f339b9458d647ed9fd50143ad4fb3ad, type: 2}
+  - {fileID: 2100000, guid: 7a4369911ce64918b3959b35e2655c94, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -87,7 +87,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 8191337359296515599}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 011359c1a06c4bb696dc6f569300af05, type: 3}
+  m_Script: {fileID: 11500000, guid: 3bfc0e75cffb489a82ef89d1bb396079, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   UvRotateSpeed: 0.4
@@ -97,3 +97,8 @@ MonoBehaviour:
   depthTextureModeOn: 1
   waterSyncWind: 0
   windZone: {fileID: 0}
+  mirrorOn: 0
+  disablePixelLights: 0
+  mirrorBackSide: 0
+  textureSize: 1024
+  clipPlaneOffset: -0.5
