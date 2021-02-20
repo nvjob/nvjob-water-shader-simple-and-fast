@@ -8,7 +8,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Flag 1
-  m_Shader: {fileID: 4800000, guid: 965ecca5e22747a9aa2961c41fbce23f, type: 3}
+  m_Shader: {fileID: 4800000, guid: bd7e0e6d31ac4d90a83d751e947eacd7, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -40,7 +40,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: 1e02d4481fd14243a23e43b2db320427, type: 3}
+        m_Texture: {fileID: 2800000, guid: cbea8ddeb8984b029caadbd732ce5dce, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MetallicGlossMap:

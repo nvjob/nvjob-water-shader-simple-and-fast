@@ -9,7 +9,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bcbddcafec0145398fc8ea22e79f317f, type: 3}
+  m_Script: {fileID: 11500000, guid: 1aab68cc408a436da8c529540e84ccf3, type: 3}
   m_Name: Example 2
   m_EditorClassIdentifier: 
   debugViews:
@@ -107,7 +107,7 @@ MonoBehaviour:
         radius: 4.24
         antiFlicker: 0
       lensDirt:
-        texture: {fileID: 2800000, guid: 3a0eee52edc447aa9ccc50e573bdffb6, type: 3}
+        texture: {fileID: 2800000, guid: 8402e854c6a6402e9432bb61a0adf353, type: 3}
         intensity: 1
   colorGrading:
     m_Enabled: 1

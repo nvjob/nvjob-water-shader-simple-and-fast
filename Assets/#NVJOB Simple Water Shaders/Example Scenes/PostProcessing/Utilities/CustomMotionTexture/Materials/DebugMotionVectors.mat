@@ -8,7 +8,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: DebugMotionVectors
-  m_Shader: {fileID: 4800000, guid: c0b96c53fcfb47f7aca62d9f5f18c403, type: 3}
+  m_Shader: {fileID: 4800000, guid: a9f0e2bc0b8e44dbb4a8a86571d2f8cc, type: 3}
   m_ShaderKeywords: _EMISSION
   m_LightmapFlags: 1
   m_EnableInstancingVariants: 0
@@ -40,7 +40,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: 45478bc117e74f178c0607831e441334, type: 3}
+        m_Texture: {fileID: 2800000, guid: 4c2deb4edbdf47ce9d1e4b6fb0943e33, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MetallicGlossMap:
@@ -48,7 +48,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MotionTex:
-        m_Texture: {fileID: 2800000, guid: 45478bc117e74f178c0607831e441334, type: 3}
+        m_Texture: {fileID: 2800000, guid: 4c2deb4edbdf47ce9d1e4b6fb0943e33, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _OcclusionMap:

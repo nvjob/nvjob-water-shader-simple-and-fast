@@ -8,7 +8,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Water Specular Mirror
-  m_Shader: {fileID: 4800000, guid: 0024439c3eb7492d9121b88667cf8885, type: 3}
+  m_Shader: {fileID: 4800000, guid: 634f6c46e4884878aeef838bf6261848, type: 3}
   m_ShaderKeywords: EFFECT_ALBEDO2 EFFECT_MICROWAVE EFFECT_MIRROR EFFECT_NORMALMAP2
     EFFECT_PARALLAX EFFECT_REFLECTION
   m_LightmapFlags: 4
@@ -21,15 +21,15 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - _AlbedoTex1:
-        m_Texture: {fileID: 2800000, guid: 15369c01f146413dae6799bed60ca358, type: 3}
+        m_Texture: {fileID: 2800000, guid: 51448f930bde48118673fbb997b466e4, type: 3}
         m_Scale: {x: 80, y: 80}
         m_Offset: {x: 0, y: 0}
     - _AlbedoTex2:
-        m_Texture: {fileID: 2800000, guid: aa85df5870ef49ddbcf5ead274f29dcd, type: 3}
+        m_Texture: {fileID: 2800000, guid: 0c292aa3b87a4864bcdec8b371a4071b, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _BumpMap:
-        m_Texture: {fileID: 2800000, guid: 1ee4ea3f0d0840fe873925cde03d1ee1, type: 3}
+        m_Texture: {fileID: 2800000, guid: a63442e1ee644882b3520287865063be, type: 3}
         m_Scale: {x: 80, y: 80}
         m_Offset: {x: 0, y: 0}
     - _BumpMap2:
@@ -37,11 +37,11 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _BumpMapDetail:
-        m_Texture: {fileID: 2800000, guid: 6003b78523a7497295a9377da1229568, type: 3}
+        m_Texture: {fileID: 2800000, guid: 93621a16d98343ed9b2278eafb161978, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Cube:
-        m_Texture: {fileID: 8900000, guid: f0248b9d64b1476abe044ba4e16ee4ba, type: 2}
+        m_Texture: {fileID: 8900000, guid: 5493d72b909e45b8858aac96631c9adb, type: 2}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _CubeMap:
@@ -53,7 +53,7 @@ Material:
         m_Scale: {x: 5, y: 5}
         m_Offset: {x: 0, y: 0}
     - _Detail:
-        m_Texture: {fileID: 2800000, guid: aa85df5870ef49ddbcf5ead274f29dcd, type: 3}
+        m_Texture: {fileID: 2800000, guid: 0c292aa3b87a4864bcdec8b371a4071b, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _DetailAlbedoMap:
@@ -73,7 +73,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _DispTex:
-        m_Texture: {fileID: 2800000, guid: 15369c01f146413dae6799bed60ca358, type: 3}
+        m_Texture: {fileID: 2800000, guid: 51448f930bde48118673fbb997b466e4, type: 3}
         m_Scale: {x: 30, y: 30}
         m_Offset: {x: 0, y: 0}
     - _EmissionMap:
@@ -85,7 +85,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: 15369c01f146413dae6799bed60ca358, type: 3}
+        m_Texture: {fileID: 2800000, guid: 51448f930bde48118673fbb997b466e4, type: 3}
         m_Scale: {x: 30, y: 30}
         m_Offset: {x: 0, y: 0}
     - _MetallicGlossMap:
@@ -109,15 +109,15 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _NormalMap:
-        m_Texture: {fileID: 2800000, guid: 1ee4ea3f0d0840fe873925cde03d1ee1, type: 3}
+        m_Texture: {fileID: 2800000, guid: a63442e1ee644882b3520287865063be, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _NormalMap1:
-        m_Texture: {fileID: 2800000, guid: 1ee4ea3f0d0840fe873925cde03d1ee1, type: 3}
+        m_Texture: {fileID: 2800000, guid: a63442e1ee644882b3520287865063be, type: 3}
         m_Scale: {x: 80, y: 80}
         m_Offset: {x: 0, y: 0}
     - _NormalMap2:
-        m_Texture: {fileID: 2800000, guid: 6003b78523a7497295a9377da1229568, type: 3}
+        m_Texture: {fileID: 2800000, guid: 93621a16d98343ed9b2278eafb161978, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _OcclusionMap:
@@ -125,11 +125,11 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _ParallaxMap:
-        m_Texture: {fileID: 2800000, guid: 25f22b7528514cee987045c404123380, type: 3}
+        m_Texture: {fileID: 2800000, guid: 436f260eaa344ecaad45e34d803d5330, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _ReflectionCube:
-        m_Texture: {fileID: 8900000, guid: f0248b9d64b1476abe044ba4e16ee4ba, type: 2}
+        m_Texture: {fileID: 8900000, guid: 5493d72b909e45b8858aac96631c9adb, type: 2}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _ReflectionTex:
@@ -248,7 +248,7 @@ Material:
     - _DiffuseColor: {r: 0.32352936, g: 0.32352936, b: 0.32352936, a: 1}
     - _EdgeColor: {r: 0.5588235, g: 0.5588235, b: 0.5588235, a: 1}
     - _EmissionColor: {r: 0.5441177, g: 0.5441177, b: 0.5441177, a: 1}
-    - _MirrorColor: {r: 1.319508, g: 1.319508, b: 1.319508, a: 0.5}
+    - _MirrorColor: {r: 1.5150162, g: 1.5150162, b: 1.5150162, a: 0.5}
     - _MirrorDepthColor: {r: 0, g: 0, b: 0, a: 1}
     - _MirrorReflectionColor: {r: 1, g: 1, b: 1, a: 0.5}
     - _ReflectColor: {r: 1, g: 1, b: 1, a: 1}

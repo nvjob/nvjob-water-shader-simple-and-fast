@@ -8,7 +8,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Palm
-  m_Shader: {fileID: 4800000, guid: ac7b92126ab74cc398260be31d24afb0, type: 3}
+  m_Shader: {fileID: 4800000, guid: 1c9bb1c3b19049efb2ef956e92a57d16, type: 3}
   m_ShaderKeywords: _ALPHATEST_ON _METALLICGLOSSMAP _NORMALMAP
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 1
@@ -21,7 +21,7 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - _BumpMap:
-        m_Texture: {fileID: 2800000, guid: 25ce4f87c4ee4443841be84c38d28aca, type: 3}
+        m_Texture: {fileID: 2800000, guid: 4bbe970e15e7400c9234ae66b4e49b58, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _BumpMapD:
@@ -49,11 +49,11 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: e2972acbb24c4bbb992f6263c4af955e, type: 3}
+        m_Texture: {fileID: 2800000, guid: 3fc588a0d8ee48b8aee2392aff2a6d73, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MetallicGlossMap:
-        m_Texture: {fileID: 2800000, guid: 0594428dd1944ce6a32928a6b0b7aba7, type: 3}
+        m_Texture: {fileID: 2800000, guid: 766752af2a1044e496935481ca137bf0, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _OcclusionMap:

@@ -9,7 +9,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bcbddcafec0145398fc8ea22e79f317f, type: 3}
+  m_Script: {fileID: 11500000, guid: 1aab68cc408a436da8c529540e84ccf3, type: 3}
   m_Name: CustomMotionVectorDebugProfile
   m_EditorClassIdentifier: 
   debugViews:
