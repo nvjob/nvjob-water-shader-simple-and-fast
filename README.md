@@ -1,9 +1,10 @@
-# #NVJOB Simple Water Shaders v1.5.1. Free Unity Asset.
+# #NVJOB Simple Water Shaders V1.x. Free Unity Asset.
 
 ### Information
 
 #NVJOB Simple Water Shaders are fast and easy water shaders running on mobile and desktop platforms. The asset includes two shaders, Specular and Surface. Water over time changes the direction vector, the direction of movement changes in a circle. You can also set the direction of water movement (for example, synchronize the direction of water with the direction of the Wind Zone). These shaders do not use tessellation, only normal mapping and parallax. Supported rendering path deferred and forward (DepthTextureMode). This shader is well suited for decorative purposes, in scenes where water is not a key element.
 
+New Versions - [nvjob.github.io/unity/nvjob-water-shaders-v2](https://nvjob.github.io/unity/nvjob-water-shaders-v2)<br>
 Full instructions and description - [nvjob.github.io/unity/nvjob-simple-water-shaders](https://nvjob.github.io/unity/nvjob-simple-water-shaders)<br>
 Previous Versions - [github.com/nvjob/nvjob-water-shader-old-versions](https://github.com/nvjob/NVJOB-Water-Shader-old-versions)<br>
 Web Demo - [nvjob.github.io/web-demo/nvjob-simple-water-shaders](https://nvjob.github.io/web-demo/nvjob-simple-water-shaders/)
